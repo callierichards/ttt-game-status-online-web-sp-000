@@ -4,7 +4,7 @@ def position_taken?(board, index)
 end
 
 # Define your WIN_COMBINATIONS constant
-  WIN_COMBINATIONS.each do |WIN_COMBINATIONS| = [
+  WIN_COMBINATIONS = [
     [0,1,2], #top_row_win
     [3,4,5], #middle_row_win
     [6,7,8], #bottomrow_win
