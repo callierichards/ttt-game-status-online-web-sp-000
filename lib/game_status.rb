@@ -30,3 +30,29 @@ def won? (board)
 end
   return false
   end
+
+def full? (board)
+  board.all? {|I| i == "X" || i == "O"}
+end
+
+def draw? (board)
+  if !won?(board) && !full?(board)
+    return true
+  elsif !won?(board) && !full?(board)
+  return false
+else won?(board)
+  return false
+end
+end
+
+def over?(board)
+  if draw?(board) || won?(board) || full?(board)
+    return true
+  end
+end
+
+def winner?(board)
+  if won?(board)
+    return board[won?(board)[O]]
+  end
+end
